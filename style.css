@@ -233,20 +233,12 @@ progress{
   display: none;
 }
 
-@media only screen and (max-width:450px){
-  .logo{
-    font-size: 40px;
-    margin-left: 10px;
-    margin-right: 100px;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-}
 
 @media only screen and (max-width:770px){
   header{
     background: url('bg1.jpeg');
     background-size: cover;
+    font-size:25px;
   }
    
   #sidenav{
@@ -275,9 +267,9 @@ progress{
   }
   #menubar{
     cursor: pointer;
-    top: 10px;
-    left: 20px;
-    width: 50px;
+    top: 15px;
+    left: 10px;
+    width: 35px;
     position: fixed;
   }
 
@@ -287,10 +279,17 @@ progress{
   .logo{
     padding-left: auto;
     padding-right: auto;
-    
+    font-size:25px;
+    padding-left: 50px;
   }
   .text{
     margin-left: 50px;
+  }
+  .text p{
+    font-size: 25px;
+  }
+  .text h1{
+    font-size: 35px;
   }
   .about-left-col{
     flex-basis: 100%;
@@ -353,14 +352,72 @@ progress{
   
   #p-title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 1rem;
   }
   .about-right-col p{
     text-align: justify;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
   }
-  
-  
+   
+}
+
+@media only screen and (max-width:450px){
+  body{
+    overflow-x:hidden;
+  }
+  .leftlink{
+    float: left;
+    margin-left: 0.3rem;
+  }
+  .rightlink{
+    float: right;
+    margin-right: 0.3rem;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .leftlink{
+    margin-left: 10px;
+    text-align: center;
+  }
+  .rightlink{
+    margin-right: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 265px){
+  .leftlink{
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+  }
+  .rightlink{
+    margin-right: 30%;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 770px) and (min-width: 380px){
+  .logo{
+    padding-left: auto;
+    padding-right: auto;
+    font-size:44px;
+    padding-left: 90px;
+  }
+  #menubar{
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+    width: 50px;
+    position: fixed;
+  }
+  .text h1{
+    font-size: 45px;
+    margin: 10px 0px;
+  }
+  .text p{
+    font-size: 35px;
+  }
 }
