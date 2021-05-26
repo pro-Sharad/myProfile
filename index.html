@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="jquery.ripples-min.js"></script>
     <title>Document</title>
 </head>
 <body>
+    
     <header>
+        <!--------------Navbar Section------------------------------------>
         <nav>
             <div class="logo">PORTFO<span>LIO</span></div>
             <div class="menu">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
 
@@ -25,21 +27,24 @@
             <p>Hello, I am</p>
             <h1>Sharad Bajpai</h1>
             <p>And I'm a <span id="ani" style="color:#e74c3c"></span></p>
-           <a href="amanbajpai5734@gmail.com"><button class="c-btn">Hire Me</button></a> 
+           <a href="#contact"><button class="c-btn">Hire Me</button></a> 
         </div>
        
     </header>
 
+    <!--------------Responsive sidebar------------------------------------>
     <section id="sidenav">
         <img src="menubar6.png" alt="" id="menubar">
         
-        <a href="">Home</a>
+        <a href="#">Home</a>
         <a href="#about">About</a>
-        <a href="">Skills</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="">Contact</a>
+        <a href="#contact">Contact</a>
     </section>
 
+
+    <!--------------About Section------------------------------------>
     <section id="about">
         <div class="section-info">
             <h1>About</h1>
@@ -52,21 +57,24 @@
             <div class="about-right-col">
             <p id="p-title">Hello, I'm Sharad and I'm a <span id="ani2" style="color:#e74c3c"></span></p>
             <p>Mark Elliot Zuckerberg (/ˈzʌkərbɜːrɡ/; born May 14, 1984) is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder.[3][4] He also is a co-founder of the solar sail spacecraft development project Breakthrough Starshot and serves as one of its board members</p>
-        <a href="buttons.html"><button class="c-btn">DOWNLOAD CV</button></a>
+        <a href="Resume.pdf" download><button class="c-btn">DOWNLOAD CV</button></a>
         </div>
     </div>
     </section>
     
 
+    <!--------------Skills Section------------------------------------>
     <section id="skills">
         <div class="section-info">
             <h1>Skills</h1>
-            <p>Who I am?</p>
+            <p>What I have learned</p>
         </div>
         <div class="skills-row">
-            <div class="skills-left-col">
-                <p>Django is a Python-based free and open-source web framework that follows the model-template-views architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.Elon Reeve Musk FRS is a business magnate, industrial designer, and engineer. He is the founder, CEO, CTO, and chief designer of SpaceX; early stage investor, CEO, and product architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI</p>
-                <a href="buttons.html"><button class="c-btn">Read more</button></a>
+            <div class="skills-left-col read-more-container">
+                <p>Django is a Python-based free and open-source web framework that follows the model-template-views architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.Elon Reeve Musk FRS is a business magnate, industrial designer, and engineer. He is the founder, CEO, CTO, and chief designer of SpaceX; early stage investor, CEO, and product architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI
+                    <span class="read-more-text">Django is a Python-based free and open-source web framework that follows the model-template-views architectural pattern. It is maintained by the Django Software Foundation</span>
+                </p>
+                <button class="c-btn read-more-btn">Read More...</button>
             </div>
             <div class="skills-right-col">
                 
@@ -123,7 +131,8 @@
     
     </section>
 
-
+     
+    <!--------------Projects Section------------------------------------>
     <section id="projects">
         <div class="section-info">
             <h1>Projects</h1>
@@ -138,21 +147,21 @@
                 <a href="" class="leftlink">Source  Code</a>
                 <a href="" class="rightlink">Visit Site</a>
             </div>
-            <div class="projects-box" data-tilt>
+            <div class="projects-box">
                 <img src="php2.jpeg" alt="" width="380px" height="215px">
                 <h2>E-Com Website</h2>
                 <p>This is a simple e-com website developed using HTML,CSS,PHP & MYSQL</p>
                 <a href="" class="leftlink">Source  Code</a>
                 <a href="" class="rightlink">Visit Site</a>
             </div>
-            <div class="projects-box" data-tilt>
+            <div class="projects-box">
                 <img src="craig-dj.jpg" alt="" width="380px" height="215px">
                 <h2>Craiglist Clone</h2>
                 <p>Craiglist clone developed using HTML,CSS Python and DJango</p>
                 <a href="" class="leftlink">Source  Code</a>
                 <a href="" class="rightlink">Visit Site</a>
             </div>
-            <div class="projects-box" data-tilt>
+            <div class="projects-box">
                 <img src="django.jpg" alt="" width="380px" height="215px">
                 <h2>E-Com Website</h2>
                 <p>E-Com website developed using Django framework</p>
@@ -162,6 +171,8 @@
  
     </section>
 
+
+    <!--------------Contact Section------------------------------------>
     <section id="contact">
         <div class="section-info" style="color: white;">
             <h1>Get In Touch</h1>
@@ -172,42 +183,69 @@
                 <img src="b3.png" alt="cover">
             </div>
             <div class="contact-right-col">
-                <form>
+                <form action="https://formsubmit.co/amanbajpai5734@gmail.com" method="POST">
                     <h2>Connect with us</h2>
-                    <input type="text" name="" placeholder="Name">
-                    <input type="email" name="" placeholder="E-Mail">
+                    <input type="text" name="" placeholder="Name" required>
+                    <input type="email" name="" placeholder="E-Mail" required>
                     <br>
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Message" required></textarea>
                     <br>
+                    <input type="hidden" name="_next" value="thanks.html">
                     <a href="buttons.html"><button class="c-btn">Submit</button></a>
                 </form>
             </div>
         </div>
     </section>
 
+
+    <!--------------Footer Section---------------------->
     <section id="footer">
-        <h2>Developed by <br>Sharad Bajpai</h2>
-        <img src="icon.png" alt="" width="100px">
+        <h2>Socialize</h2>  
+        <ul>
+            
+            <li><a href=""><img src="facebook.svg" alt="" width="30px" height="30px"></a></li>
+            <li><a href=""><img src="twitter.svg" alt="" width="30px" height="30px"></a></li>
+            <li><a href=""><img src="linkedin.svg" alt="" width="30px" height="30px"></a></li>
+            <li><a href=""><img src="instagram.svg" alt="" width="30px" height="30px"></a></li>
+            <li><a href=""><img src="github.svg" alt="" width="30px" height="30px"></a></li>
+        
+        </ul>
     </section>
 
+
+   <!--------------Links for external JS files----------------------> 
     <script src="main.js"></script>
-    
-    
-    <script src="jquery.ripples-min.js"></script>
     <script src="typed.min.js"></script> 
     <script src="tilt.jquery.min.js"></script>
+   
 
-    <!--<script>
-        jQuery(document).ready(function(){
-            $('header').ripples({
-            resolution: 512,    
-            imageUrl:('b1.png','bg1.jpeg'),
-            dropRadius: 20,
-            perturbance: 0.03,
-          });
-        })
-    </script>-->
+    <!--------------JQuery for smooth scrolling effect---------------------->
+    <script>
+        $(function(){
+            $(".menu a").on("click",function(){
+                $("html,body").animate({
+                    scrollTop: $($.attr(this,'href')).offset().top
+                },500);
+                });
+            });
+        $(function(){
+            $("#sidenav a").on("click",function(){
+                $("html,body").animate({
+                    scrollTop: $($.attr(this,'href')).offset().top
+                },500);
+                });
+            });
+        $(function(){
+            $(".text a").on("click",function(){
+                $("html,body").animate({
+                    scrollTop: $($.attr(this,'href')).offset().top
+                },500);
+                });
+            });
+    </script>
     
+
+    <!--------------JQuery for typed animation---------------------->
     <script>
         let animate=new Typed('#ani',{
             strings:['Web Developer','Programmer','GUI Developer'],
@@ -223,6 +261,8 @@
         })
     </script>
 
+
+     <!--------------JQuery for responsive sidebar---------------------->
     <script>
         var menu=document.getElementById("menubar");
         var sidenav=document.getElementById("sidenav");
@@ -240,18 +280,15 @@
             if(e.target.id!=='sidenav' && e.target.id!=='menubar'){
                 sidenav.style.width="0px";
             }
-        }
-
-        
-        
+        } 
     </script>
+
+
     <script>
         if ($(window).width() < 770) {
-        
             console.log("Less than 480")
         }
         else {
-            
             // run the tilt
         }
     </script>
