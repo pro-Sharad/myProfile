@@ -458,13 +458,11 @@ ul li a{
   width: 10px;
   justify-content: center;
   align-items: center;
-  background: #fff;
   margin: 0 10px;
   text-decoration: none;
   justify-content: space-between;
   border-radius: 30%;
   font-size:20px;
-  color: #e2e2e2;
   box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
               2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -472,6 +470,26 @@ ul li a{
 ul li{
   margin-right: 8px;
 }
+#footer ul li a{
+  background: none;
+}
+#footer ul li:nth-child(1) a:before{
+  
+  color:white;
+}
+#footer ul li:nth-child(2) a:before{
+  background: none;
+}
+#footer ul li:nth-child(3) a:before{
+  background: none;
+}
+#footer ul li:nth-child(4) a:before{
+  background: none;
+}
+#footer ul li:nth-child(5) a:before{
+  background: none;
+}
+
 #footer h2{
   font-size: 30px;
 }
